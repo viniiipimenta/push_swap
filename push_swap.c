@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/04 09:14:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/12 13:41:30 by mpimenta         ###   ########.fr       */
+/*   Created: 2022/10/10 10:04:40 by mpimenta          #+#    #+#             */
+/*   Updated: 2022/10/12 11:34:43 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+#include "push_swap.h"
+
+int main(int argc, char *argv[])
 {
-	if (c >= 48 && c <= 57)
-	{
-		return (1);
-	}
-	return (0);
+    int i;
+
+    i = 1;
+    if (argc == 0)
+        return 0;
+    while(argv[i])
+    {
+        check_num(argv[i]);
+        i++;
+    }
+    return (0);
 }
