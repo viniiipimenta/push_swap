@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 14:39:39 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/12 11:35:58 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/10/14 10:21:38 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 
 int		ft_isalpha(int c);
-int		ft_isdigit(char *c);
+int		ft_isdigit(char c);
 int		ft_isalnum(int c);
 int		ft_isascii(int c);
 int		ft_isprint(int c);

@@ -18,7 +18,6 @@ $(NAME): ${OBJS}
 		${CC} ${CFLAGS} ./libft/libft.a $(SRCS) -o $(NAME)
 
 
-
 all:	${NAME}
 
 
