@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:24:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/18 13:11:33 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/10/18 14:09:39 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,16 @@ typedef struct stack
 
 void    check_num(char *num);
 void    ft_stack(char **value, int argc);
-void    sa(void);
-void    sb(void);
+void    sa(int print);
+void    sb(int print);
 void    ss(void);
 void    pa(void);
 void    pb(void);
+void    ra(int print);
+void    rb(int print);
+void    rr(void);
+void    rra(int print);
+void    rrb(int print);
+void    rrr(void);
 
 #endif

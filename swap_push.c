@@ -6,40 +6,43 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:20:39 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/18 12:28:31 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/10/18 13:53:32 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-/*
-void    sa(void)
-{
-    stack_a a;
-    int     temp;
 
-    temp = a.num;
-    a.num = a.next->num;
-    a.next->num = temp;
-    ft_putstr_fd("sa\n", 1);
+void    sa(int print)
+{
+    stack stack;
+    int temp;
+
+    temp = stack.num_a[0];
+    stack.num_a[0] = stack.num_a[1];
+    stack.num_a[1] = temp;
+    if (print == 1)
+        ft_putstr_fd("sa\n", 1);
 }
 
-void    sb(void)
+void    sb(int print)
 {
-    stack_b b;
-    int     temp;
+    stack stack;
+    int temp;
 
-    temp = b.num;
-    b.num = b.next->num;
-    b.next->num = temp;
-    ft_putstr_fd("sa\n", 1);
+    temp = stack.num_b[0];
+    stack.num_b[0] = stack.num_b[1];
+    stack.num_b[1] = temp;
+    if (print == 1)
+        ft_putstr_fd("sb\n", 1);
 }
 
 void    ss(void)
 {
-    sa();
-    sb();
+    sa(0);
+    sb(0);
+    ft_putstr_fd("ss\n", 1);
 }
-
+/*
 void    pa(void)
 {
     stack_a a;
