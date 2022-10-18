@@ -6,12 +6,12 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:20:39 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/17 15:48:28 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/10/18 12:28:31 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
+/*
 void    sa(void)
 {
     stack_a a;
@@ -54,4 +54,4 @@ void    pb(void)
     stack_b b;
 
     b.num = a.num;
-}
+}*/

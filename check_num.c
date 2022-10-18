@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/14 10:20:41 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/10/18 12:29:43 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void check_num(char *num)
 {
     int i;
 
-    i = 1;
+    i = 0;
     while (num[i])
     {
         if (ft_isdigit(num[i]) == 0)

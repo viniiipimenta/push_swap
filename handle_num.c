@@ -6,34 +6,36 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/17 15:50:16 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/10/18 13:12:15 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./push_swap.h"
-
-void    ft_stack(char *convert, int len)
+#include <stdio.h>
+void    ft_stack(char **value, int argc)
 {
-    stack_a    a;
+    stack   stack;
     int     i;
-    
+    int     j;
+
     i = 1;
-    a.next = malloc(sizeof(int) * len);
-    a.next->next = NULL;
-    a.current = &a;
-    while (a.current != NULL && convert[i])
+    j = 0;
+    stack.num_a = (int *) malloc(sizeof(int) * (argc - 1));
+    while (value[i])
     {
-        a.current->num = ft_atoi(convert[i]);
-        a.current = a.current->next;
+        stack.num_a[j] = ft_atoi(value[i]);
+        printf("%d\n", stack.num_a[j]);
         i++;
+        j++;
     }
+    stack.len_a = j;
 }
 
 void check_num(char *num)
 {
     int i;
 
-    i = 1;
+    i = 0;
     while (num[i])
     {
         if (ft_isdigit(num[i]) == 0)

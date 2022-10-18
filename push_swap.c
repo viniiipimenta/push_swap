@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 10:04:40 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/17 14:13:24 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/10/18 13:11:23 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int main(int argc, char *argv[])
         check_num(argv[i]);
         i++;
     }
-    ft_stack(argv, i);
+    ft_stack(argv, argc);
     return (0);
 }
