@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/11/14 14:07:58 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/11/14 14:36:08 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@ void check_limit(void)
     stack   stack;
     int     i;
 
-    i = stack.len_a;
-    while(i)
+    i = 0;
+    while(stack.num_a[i])
     {
-        if (stack.num_a[i] > 2147483647 || (long)stack.num_a < -2147483648)
+        if (stack.num_a[i] > 2147483647 || stack.num_a[i] < -2147483648)
         {
             ft_putstr_fd("Error limit\n", 1);
             exit(0);
         }
-        i--;
+        i++;
     }
 }
 
