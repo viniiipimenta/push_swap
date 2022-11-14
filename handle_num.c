@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/18 13:12:15 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/11/14 11:58:15 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,20 +29,4 @@ void    ft_stack(char **value, int argc)
         j++;
     }
     stack.len_a = j;
-}
-
-void check_num(char *num)
-{
-    int i;
-
-    i = 0;
-    while (num[i])
-    {
-        if (ft_isdigit(num[i]) == 0)
-        {
-            ft_putstr_fd("Wrong input, input just numbers.", 1);
-            exit(0);
-        }
-        i++;
-    }
 }

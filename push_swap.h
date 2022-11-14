@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:24:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/10/18 14:09:39 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/11/14 13:51:10 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ typedef struct stack
 } stack;
 
 void    check_num(char *num);
+void    check_limit(void);
 void    ft_stack(char **value, int argc);
 void    sa(int print);
 void    sb(int print);

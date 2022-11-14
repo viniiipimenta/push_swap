@@ -1,7 +1,7 @@
 NAME = push_swap
 
 
-SRCS = push_swap.c handle_num.c swap_push.c
+SRCS = push_swap.c handle_num.c swap_push.c check_num.c
 
 
 CC		= cc
@@ -10,7 +10,7 @@ CC		= cc
 RM		= rm -f
 
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 
 
 $(NAME): ${OBJS}
