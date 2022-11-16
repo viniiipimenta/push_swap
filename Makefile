@@ -10,7 +10,7 @@ CC		= cc
 RM		= rm -f
 
 
-CFLAGS = -Wall -Wextra -Werror -g
+CFLAGS = -Wall -Wextra -Werror
 
 
 $(NAME): ${OBJS}
