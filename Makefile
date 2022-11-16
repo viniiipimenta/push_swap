@@ -1,7 +1,7 @@
 NAME = push_swap
 
 
-SRCS = push_swap.c handle_num.c swap_push.c check_num.c
+SRCS = push_swap.c handle_num.c check.c
 
 
 CC		= cc

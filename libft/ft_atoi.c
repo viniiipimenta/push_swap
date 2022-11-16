@@ -6,9 +6,11 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/27 10:33:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/05/27 14:13:17 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/11/16 09:41:22 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../push_swap.h"
 
 int	ft_atoi(const char *str)
 {
@@ -35,5 +37,6 @@ int	ft_atoi(const char *str)
 		result = (str[i] - 48) + (result * 10);
 		i++;
 	}
+	check_limit(result * signal);
 	return (result * signal);
 }
