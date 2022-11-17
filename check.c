@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "./push_swap.h"
-#include <stdio.h>
 
 void	check_repeat(int len, t_stack *stack)
 {
