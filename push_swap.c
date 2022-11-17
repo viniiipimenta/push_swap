@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 10:04:40 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/11/17 14:50:15 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/11/17 15:06:56 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@ int	main(int argc, char *argv[])
 	t_stack	stack;
 
 	i = 1;
-	if (argc == 1)
+	if (argc == 1 || argc == 2)
+	{
 		return (0);
+	}
 	while (argv[i])
 	{
 		check_num(argv[i]);
