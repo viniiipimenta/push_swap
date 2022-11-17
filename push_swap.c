@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 10:04:40 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/11/16 14:12:30 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:33:45 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,9 @@ int	main(int argc, char *argv[])
 		check_num(argv[i]);
 		i++;
 	}
-	ft_stack(argv, argc);
-	check_repeat(argc - 1);
+	stack.num_a = (int *) malloc(sizeof(int) * (argc - 1));
+	ft_stack(argv, &stack);
+	check_repeat(argc - 1, &stack);
 	free(stack.num_a);
 	free(stack.num_b);
 	return (0);
