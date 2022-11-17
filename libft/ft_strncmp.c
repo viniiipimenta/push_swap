@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/26 14:14:41 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/11/16 13:40:19 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:49:57 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t			i;
 	unsigned char	*str;
 	unsigned char	*str2;
-
 
 	i = 0;
 	str = (unsigned char *)s1;
