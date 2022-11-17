@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/11/17 14:34:25 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:36:48 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,18 +24,15 @@ void	check_repeat(int len, t_stack *stack)
 	{
 		while (j < len)
 		{
-			printf("num i %d | num j %d\n", stack->num_a[i], stack->num_a[j]);
-			printf("i %d | j %d\n", i, j);
 			if (stack->num_a[i] == stack->num_a[j])
 			{
-				ft_putstr_fd("Error\n", 1);
+				ft_putstr_fd("Error duplicate\n", 1);
 				exit(0);
 			}
 			j++;
 		}
 		i++;
 		j = i + 1;
-		printf("-----------\n");
 	}
 }
 
