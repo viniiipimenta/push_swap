@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/11/17 14:36:48 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/11/17 14:38:11 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	check_repeat(int len, t_stack *stack)
 		{
 			if (stack->num_a[i] == stack->num_a[j])
 			{
-				ft_putstr_fd("Error duplicate\n", 1);
+				ft_putstr_fd("Error\n", 1);
 				exit(0);
 			}
 			j++;
