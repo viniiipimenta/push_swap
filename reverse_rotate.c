@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 16:45:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/08 16:54:55 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/08 18:04:58 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,11 @@ void rrb(int print, t_stack *stack)
     stack->num_b[0] = swap;
     if (print == 1)
         ft_putstr_fd("rrb\n", 1);
+}
+
+void rrr(t_stack *stack)
+{
+    rra(0, stack);
+    rrb(0, stack);
+    ft_putstr_fd("rrb\n", 1);
 }
