@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:24:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/08 16:29:39 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/12 15:13:37 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,13 @@ void	sorting(t_stack stack, int len);
 void    sa(int print, t_stack *stack);
 void    sb(int print, t_stack *stack);
 void    ss(t_stack *stack);
+void    pa(t_stack *stack);
+void    pb(t_stack *stack);
+void	ra(int print, t_stack *stack);
+void	rb(int print, t_stack *stack);
+void	rr(t_stack *stack);
+void	rra(int print, t_stack *stack);
+void	rrb(int print, t_stack *stack);
+void	rrr(t_stack *stack);
 
 #endif

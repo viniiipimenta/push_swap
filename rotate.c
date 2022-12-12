@@ -6,9 +6,11 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 16:30:44 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/08 16:51:10 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/12 13:20:17 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "push_swap.h"
 
 void ra(int print, t_stack *stack)
 {
@@ -22,7 +24,7 @@ void ra(int print, t_stack *stack)
         stack->num_a[counter] = stack->num_a[counter + 1];
         counter++;
     }
-    stack->num_a[stack->len_a] = swap;
+    stack->num_a[stack->len_a - 1] = swap;
     if (print == 1)
         ft_putstr_fd("ra\n", 1);
 }
@@ -39,12 +41,12 @@ void rb(int print, t_stack *stack)
         stack->num_b[counter] = stack->num_b[counter + 1];
         counter++;
     }
-    stack->num_b[stack->len_b] = swap;
+    stack->num_b[stack->len_b - 1] = swap;
     if (print == 1)
         ft_putstr_fd("rb\n", 1);
 }
 
-void rb(t_stack *stack)
+void    rr(t_stack *stack)
 {
     ra(0, stack);
     rb(0, stack);

@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/11/21 10:20:05 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/12 09:48:30 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,10 @@ int	check_sort(t_stack *stack, int len)
 			i++;
 			j++;
 		}
-		else
-			sorting(stack, len);
+		j++;
+		i++;
+		// else
+		// 	sorting(stack, len);
 	}
 	return (0);
 }
