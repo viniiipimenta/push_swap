@@ -6,13 +6,13 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/13 12:23:44 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/13 14:41:37 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./push_swap.h"
 
-void	check_sort(t_stack *stack, int len)
+int	check_sort(t_stack *stack, int len)
 {
 	int	i;
 	int	j;
@@ -27,8 +27,10 @@ void	check_sort(t_stack *stack, int len)
 			j++;
 		}
 		else
-			sorting(stack);
+			return (0);
 	}
+	free(stack->num_a);
+	exit (0);
 }
 
 void	check_repeat(int len, t_stack *stack)
