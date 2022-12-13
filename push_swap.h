@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:24:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/12 15:13:37 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:11:17 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,9 @@ void	check_num(char *num);
 void	check_limit(long len);
 void	ft_stack(char **value, t_stack *stack);
 void	check_repeat(int len, t_stack *stack);
-int		check_sort(t_stack *stack, int len);
-void	sorting(t_stack stack, int len);
+void	check_sort(t_stack *stack, int len);
+void	sorting(t_stack *stack);
+
 void    sa(int print, t_stack *stack);
 void    sb(int print, t_stack *stack);
 void    ss(t_stack *stack);
