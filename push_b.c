@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 10:21:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/13 12:27:26 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/13 17:17:59 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,4 +81,5 @@ void	pa(t_stack *stack)
 		stack->len_b--;
 		free(stack->num_b);
 	}
+	ft_putstr_fd("pb\n", 1);
 }
