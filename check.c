@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/13 12:00:14 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/13 12:23:44 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	check_sort(t_stack *stack, int len)
 
 	i = 0;
 	j = 1;
-	while(j < len)
+	while (j < len)
 	{
-		if(stack->num_a[j] > stack->num_a[i])
+		if (stack->num_a[j] > stack->num_a[i])
 		{
 			i++;
 			j++;
