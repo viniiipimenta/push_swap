@@ -28,7 +28,7 @@ void	check_limit(long len);
 void	ft_stack(char **value, t_stack *stack);
 void	check_repeat(int len, t_stack *stack);
 int		check_sort(t_stack *stack, int len);
-void	turn_index(t_stack *stack);
+void	sort_to_index(t_stack *stack);
 void	sorting(t_stack *stack);
 
 void	sa(int print, t_stack *stack);
