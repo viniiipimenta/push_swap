@@ -6,20 +6,11 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 11:21:24 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/14 15:36:19 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/14 15:59:22 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-// void	sorting(t_stack *stack)
-// {
-// 	int	len;
-
-// 	len = stack->len_a;
-// 	if (len == 2)
-// 		sa(1, stack);
-// }
 
 void	turn_index(t_stack *stack, int *sorted)
 {
