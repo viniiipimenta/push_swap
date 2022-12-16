@@ -6,15 +6,14 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:24:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/14 15:36:38 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/16 09:46:58 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-#include <stdlib.h>
-#include <unistd.h>
+#include "./libft/libft.h"
 
 typedef struct stack
 {
