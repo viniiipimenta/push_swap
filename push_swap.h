@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:24:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/16 09:46:58 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/16 09:52:55 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,4 @@ void	rr(t_stack *stack);
 void	rra(int print, t_stack *stack);
 void	rrb(int print, t_stack *stack);
 void	rrr(t_stack *stack);
-
-int	ft_atoi(const char *str);
-int	ft_isdigit(char c);
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char *s, int fd);
 #endif
