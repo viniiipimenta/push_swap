@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 15:58:46 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/15 16:14:23 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/14 22:28:33 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,16 @@ void	sort_thee(t_stack *stack)
 {
 	if (stack->num_a[0] > stack->num_a[1] && stack->num_a[0] < stack->num_a[2])
 		sa(1, stack);
-	else if (stack->num_a[0] < stack->num_a[1]
-		&& stack->num_a[0] > stack->num_a[2])
+	else if (stack->num_a[0] < stack->num_a[1] && stack->num_a[0] > stack->num_a[2])
 		rra(1, stack);
-	else if (stack->num_a[0] < stack->num_a[1]
-		&& stack->num_a[1] > stack->num_a[2])
+	else if (stack->num_a[0] < stack->num_a[1] && stack->num_a[1] > stack->num_a[2])
 	{
 		sa(1, stack);
 		ra(1, stack);
 	}
-	else if (stack->num_a[0] > stack->num_a[1]
-		&& stack->num_a[1] < stack->num_a[2])
+	else if (stack->num_a[0] > stack->num_a[1] && stack->num_a[1] < stack->num_a[2])
 		ra(1, stack);
-	else if (stack->num_a[0] > stack->num_a[1]
-		&& stack->num_a[1] > stack->num_a[2])
+	else if (stack->num_a[0] > stack->num_a[1] && stack->num_a[1] > stack->num_a[2])
 	{
 		sa(1, stack);
 		rra(1, stack);
@@ -53,6 +49,7 @@ void	optimize(t_stack *stack)
 	else if (stack->num_a[4] == 0)
 		rra(1, stack);
 }
+
 
 void	sort_five(t_stack *stack)
 {
@@ -100,8 +97,6 @@ void	sorting(t_stack *stack)
 		sort_thee(stack);
 	else if (len == 4)
 		sort_four(stack);
-	else if (len == 5)
+	else if (len  == 5)
 		sort_five(stack);
-	// else if (len > 5)
-	// 	sort_big(stack);
 }

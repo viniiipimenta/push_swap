@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 11:21:24 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/15 15:07:14 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/14 15:59:22 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	sort_to_index(t_stack *stack)
 		if (sorted[i] > sorted[i + 1])
 		{
 			temp = sorted[i];
-			sorted[i] = sorted[i + 1];
+			sorted[i] = sorted[i+ 1];
 			sorted[i + 1] = temp;
 			i = 0;
 		}
