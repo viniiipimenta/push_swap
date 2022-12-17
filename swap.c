@@ -6,37 +6,28 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 10:24:40 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/13 12:31:02 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/17 17:34:30 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	sa(int print, t_stack *stack)
+void	swap(int print, t_stack *stack)
 {
 	int	temp;
 
-	temp = stack->num_a[0];
-	stack->num_a[0] = stack->num_a[1];
-	stack->num_a[1] = temp;
+	temp = stack->num[0];
+	stack->num[0] = stack->num[1];
+	stack->num[1] = temp;
 	if (print == 1)
 		ft_putstr_fd("sa\n", 1);
-}
-
-void	sb(int print, t_stack *stack)
-{
-	int	temp;
-
-	temp = stack->num_b[0];
-	stack->num_b[0] = stack->num_b[1];
-	stack->num_b[1] = temp;
-	if (print == 1)
+	else if (print == 2)
 		ft_putstr_fd("sb\n", 1);
 }
 
-void	ss(t_stack *stack)
+void	ss(t_stack *stack_a, t_stack *stack_b)
 {
-	sa(0, stack);
-	sb(0, stack);
+	swap(0, stack_a);
+	swap(0, stack_b);
 	ft_putstr_fd("ss\n", 1);
 }

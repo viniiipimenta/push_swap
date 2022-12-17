@@ -6,49 +6,33 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 16:45:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/13 12:23:12 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/17 17:34:22 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	rra(int print, t_stack *stack)
+void	reverse_rotate(int print, t_stack *stack)
 {
 	int	counter;
 	int	swap;
 
-	swap = stack->num_a[stack->len_a - 1];
-	counter = stack->len_a - 1;
+	swap = stack->num[stack->len - 1];
+	counter = stack->len - 1;
 	while (counter >= 0)
 	{
-		stack->num_a[counter + 1] = stack->num_a[counter];
+		stack->num[counter + 1] = stack->num[counter];
 		counter--;
 	}
-	stack->num_a[0] = swap;
+	stack->num[0] = swap;
 	if (print == 1)
 		ft_putstr_fd("rra\n", 1);
 }
 
-void	rrb(int print, t_stack *stack)
-{
-	int	counter;
-	int	swap;
 
-	swap = stack->num_b[stack->len_b - 1];
-	counter = stack->len_b - 1;
-	while (counter >= 0)
-	{
-		stack->num_b[counter + 1] = stack->num_b[counter];
-		counter--;
-	}
-	stack->num_b[0] = swap;
-	if (print == 1)
-		ft_putstr_fd("rrb\n", 1);
-}
-
-void	rotate_rr(t_stack *stack)
+void	rrr(t_stack *stack_a, t_stack *stack_b)
 {
-	rra(0, stack);
-	rrb(0, stack);
+	reverse_rotate(0, stack_a);
+	reverse_rotate(0, stack_b);
 	ft_putstr_fd("rrb\n", 1);
 }

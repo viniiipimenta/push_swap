@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 11:21:24 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/14 15:59:22 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/17 18:44:50 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,12 @@ void	turn_index(t_stack *stack, int *sorted)
 
 	i = 0;
 	j = 0;
-	temp = malloc(sizeof(int) * stack->len_a);
-	while (i < stack->len_a)
+	temp = malloc(sizeof(int) * stack->len);
+	while (i < stack->len)
 	{
-		while (j < stack->len_a)
+		while (j < stack->len)
 		{
-			if (stack->num_a[i] == sorted[j])
+			if (stack->num[i] == sorted[j])
 				temp[i] = j;
 			j++;
 		}
@@ -33,9 +33,9 @@ void	turn_index(t_stack *stack, int *sorted)
 		j = 0;
 	}
 	i = 0;
-	while (i < stack->len_a)
+	while (i < stack->len)
 	{
-		stack->num_a[i] = temp[i];
+		stack->num[i] = temp[i];
 		i++;
 	}
 	free(temp);
@@ -48,14 +48,14 @@ void	sort_to_index(t_stack *stack)
 	int	*sorted;
 
 	i = 0;
-	sorted = malloc(sizeof(int) * stack->len_a);
-	while (i < stack->len_a)
+	sorted = malloc(sizeof(int) * stack->len);
+	while (i < stack->len)
 	{
-		sorted[i] = stack->num_a[i];
+		sorted[i] = stack->num[i];
 		i++;
 	}
 	i = 0;
-	while (i < (stack->len_a - 1))
+	while (i < (stack->len - 1))
 	{
 		if (sorted[i] > sorted[i + 1])
 		{

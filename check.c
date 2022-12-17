@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/13 14:41:37 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/17 18:02:56 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	check_sort(t_stack *stack, int len)
 	j = 1;
 	while (j < len)
 	{
-		if (stack->num_a[j] > stack->num_a[i])
+		if (stack->num[j] > stack->num[i])
 		{
 			i++;
 			j++;
@@ -29,8 +29,7 @@ int	check_sort(t_stack *stack, int len)
 		else
 			return (0);
 	}
-	free(stack->num_a);
-	exit (0);
+	return (1);
 }
 
 void	check_repeat(int len, t_stack *stack)
@@ -44,7 +43,7 @@ void	check_repeat(int len, t_stack *stack)
 	{
 		while (j < len)
 		{
-			if (stack->num_a[i] == stack->num_a[j])
+			if (stack->num[i] == stack->num[j])
 			{
 				ft_putstr_fd("Error\n", 1);
 				exit(0);
