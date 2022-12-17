@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 14:19:06 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/17 18:51:49 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/17 19:03:16 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	sort_big(t_stack *stack_a, t_stack *stack_b)
 		i = 0;
 		while (i < size)
 		{
-			if (((stack_a->num[stack_a->len - 1] >> bits) & 1) == 1)
+			if (((stack_a->num[0] >> bits) & 1) == 1)
 				rotate(1, stack_a);
 			else
 				push(stack_b, stack_a, 2);
