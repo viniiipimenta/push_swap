@@ -13,8 +13,7 @@
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-#include <stdlib.h>
-#include <unistd.h>
+#include "./libft/libft.h"
 
 typedef struct stack
 {
@@ -38,9 +37,4 @@ void	rotate(int print, t_stack *stack);
 void	rr(t_stack *stack_a, t_stack *stack_b);
 void	reverse_rotate(int print, t_stack *stack);
 void	rrr(t_stack *stack_a, t_stack *stack_b);
-
-int	ft_atoi(const char *str);
-int	ft_isdigit(char c);
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char *s, int fd);
 #endif
