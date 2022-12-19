@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 09:58:20 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/19 09:52:00 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/19 15:26:15 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ int	check_sort(t_stack *stack, int len)
 
 void	check_repeat(int len, t_stack *stack)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 1;
@@ -72,6 +72,12 @@ void	check_num(char *num)
 	while (num[i])
 	{
 		if (ft_isdigit(num[i]) == 0)
+		{
+			ft_putstr_fd("Error\n", 1);
+			exit(0);
+		}
+		if ((num[i] == '-' || num[i] == '+')
+			&& !(num[i + 1] >= '0' && num[i + 1] <= '9'))
 		{
 			ft_putstr_fd("Error\n", 1);
 			exit(0);
