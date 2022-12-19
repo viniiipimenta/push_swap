@@ -6,26 +6,11 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 10:04:40 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/19 09:52:03 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/19 11:45:20 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-#include <stdio.h>
-
-// void printing(t_stack *stack)
-// {
-// 	int i;
-
-// 	i = 0;
-// 	while (i < stack->len)
-// 	{
-// 		printf("%d\n", stack->num[i]);
-// 		i++;
-// 	}
-// 	printf("STACK A\n");
-// 	printf("\n-----------------------------------\n\n");
-// }
 
 int	main(int argc, char *argv[])
 {
