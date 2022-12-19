@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 14:19:06 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/17 19:03:16 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/19 09:52:13 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	sort_big(t_stack *stack_a, t_stack *stack_b)
 {
-    int	size;
+	int	size;
 	int	bits;
 	int	i;
 

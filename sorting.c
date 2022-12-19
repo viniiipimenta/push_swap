@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/14 15:58:46 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/17 18:14:25 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/19 09:52:15 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ void	optimize(t_stack *stack)
 	else if (stack->num[4] == 0)
 		reverse_rotate(1, stack);
 }
-
 
 void	sort_five(t_stack *stack_a, t_stack *stack_b)
 {
@@ -94,7 +93,7 @@ void	sorting(t_stack *stack_a, t_stack *stack_b, int len)
 		sort_thee(stack_a);
 	else if (len == 4)
 		sort_four(stack_a, stack_b);
-	else if (len  == 5)
+	else if (len == 5)
 		sort_five(stack_a, stack_b);
 	else if (len > 5)
 		sort_big(stack_a, stack_b);

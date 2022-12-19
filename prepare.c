@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 11:21:24 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/17 18:44:50 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/19 09:52:03 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,20 +47,17 @@ void	sort_to_index(t_stack *stack)
 	int	temp;
 	int	*sorted;
 
-	i = 0;
+	i = -1;
 	sorted = malloc(sizeof(int) * stack->len);
-	while (i < stack->len)
-	{
+	while (++i < stack->len)
 		sorted[i] = stack->num[i];
-		i++;
-	}
 	i = 0;
 	while (i < (stack->len - 1))
 	{
 		if (sorted[i] > sorted[i + 1])
 		{
 			temp = sorted[i];
-			sorted[i] = sorted[i+ 1];
+			sorted[i] = sorted[i + 1];
 			sorted[i + 1] = temp;
 			i = 0;
 		}

@@ -6,7 +6,7 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 16:30:44 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/17 17:34:11 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/19 09:52:12 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ void	rotate(int print, t_stack *stack)
 	else if (print == 2)
 		ft_putstr_fd("rb\n", 1);
 }
-
 
 void	rr(t_stack *stack_a, t_stack *stack_b)
 {

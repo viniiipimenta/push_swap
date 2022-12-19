@@ -6,20 +6,20 @@
 /*   By: mpimenta <mpimenta@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:24:51 by mpimenta          #+#    #+#             */
-/*   Updated: 2022/12/17 18:06:35 by mpimenta         ###   ########.fr       */
+/*   Updated: 2022/12/19 09:52:05 by mpimenta         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-#include "./libft/libft.h"
+# include "./libft/libft.h"
 
 typedef struct stack
 {
 	int	*num;
 	int	len;
-}	t_stack;
+}		t_stack;
 
 void	check_num(char *num);
 void	check_limit(long len);
